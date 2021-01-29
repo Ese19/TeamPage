@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+/* font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+    height: 47px;
+    margin: 71px auto auto 12px;
+    font-weight: bold;
+}
+h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin: 20px auto auto 12px;
+}
+.about-team {
+    font-size: 14px;
+    margin: auto auto 20px 12px;
+    line-height: 21px;
+    width: 333px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto auto 20px 12px;
+    /* gap: 20px;
+    row-gap: 10px; */
+} 
+.team-mate {
+    position: relative;
+    width: 200px;
+}
+.team-photo {
+    width: 100%;
+    height: auto;
+    max-width: 140px;
+}
+
+.team-job {
+    position: absolute;
+    top: 0;
+    right: 45px;
+    writing-mode: vertical-lr;
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+/* .team-5 {
+    margin: 0;
+} */
+
+.team-2,
+.team-4,
+.team-6 {
+    margin-top: 50px;
+}
+footer {
+    position: relative;
+    bottom: -14px;
+    padding: 10px;
+    text-align: center;
+    
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 30px 70px;
+    }
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin: auto auto 20px 12px;
+        gap: 40px;
+        row-gap: 20px;
+        justify-items: center;
+    } 
+    .team-2 {
+        margin-top: 90px;
+    } 
+    .team-5 {
+        margin-top: 130px;
+    }
+    header{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    h1 {
+        flex: 50%;
+        margin-top: 0;
+    }
+    .team-text {
+        flex: 50%;
+    }
+    .team-mate {
+        max-width: 300px;
+    }
+    .team-photo {
+        max-width: 238px;
+    }
+    .team-job {
+        right: -20px;
+    }
+}
